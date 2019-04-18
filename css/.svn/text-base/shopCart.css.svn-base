@@ -1,0 +1,145 @@
+#cartTitle
+{
+	height: 60px;
+	background-color: #F2F2F2;
+	color: #999;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#cartTitle div
+{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+}
+
+.cartContent
+{
+	height: 190px;
+	line-height: 140px;
+	padding-top: 15px;
+	font-size: 14px;
+	border-bottom: solid 2px #ccc;
+}
+
+
+.cartContent div
+{
+	float: left;
+}
+
+.cartContent img
+{
+	height: 148px;
+	padding: 10px 15px;
+	border: solid 1px #ccc;
+	margin: 0px 10px;
+	float: left;
+}
+.delRows{
+	height:20px;
+	line-height: 10px;
+	margin-top: 50px;
+}
+.move{
+	height: 20px;
+	line-height: 20px;
+}
+
+.box90
+{
+	width: 90px;
+}
+
+.box120
+{
+	width: 120px;
+}
+
+
+.box130
+{
+	width: 130px;
+}
+.box160{
+	width:160px;
+}
+.box190
+{
+	width: 190px;
+}
+
+.box290
+{
+	width: 290px;
+}
+
+.box550
+{
+	width: 550px;
+}
+
+.buyNumCon{
+	margin-top:58px;
+}
+.buyNumCon li
+{
+	height: 20px;
+	line-height: 20px;
+	width: 20px;
+	text-align: center;
+	border: solid 1px #ccc;
+	float: left;
+	cursor: pointer;
+}
+
+.marginLeft45
+{
+	margin-left: 45px;
+}
+
+.buyNumCon li input
+{
+	border: none;
+	text-align: center;
+}
+
+.buyNumCon .buyNumInput
+{
+	width: 74px;
+}
+
+#goPayLeft
+{
+	width: 1067px;
+	height:61px;
+	padding: 16px 0px;
+	font-size: 16px;
+	border: solid 1px #ccc;
+	box-sizing: border-box;
+}
+
+#goPay
+{
+	width: 130px;
+	height: 61px;
+	float: left;
+	border: none;
+	font-size: 22px;
+	font-family: "黑体";
+	color: #fff;
+	background-color: #FF6600;
+}
+
+.delRows,#delSelectedProduct,#goPay,.move
+{
+	cursor: pointer;
+}
+
+.errMessage
+{
+	color: red; 
+	font-size: 12px; 
+	display: none;
+}

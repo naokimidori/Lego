@@ -1,0 +1,15 @@
+header{
+    height: 105px;
+}
+
+#wlc{
+    box-sizing: border-box;
+    padding-left: 280px;
+}
+#footer .copyright{
+    border-top:2px solid #ccc;
+    padding-top: 20px;
+}
+#submit_btn{
+    background-color: #ccc;
+}

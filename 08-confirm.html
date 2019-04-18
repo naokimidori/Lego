@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>订单中心</title>
+    <!--引入重置样式-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--引入公用样式-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--引入蒙层-->
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <!--引入当前css-->
+    <link rel="stylesheet" href="css/08-confirm.css">
+
+    <!--引入jQuery-->
+    <script src="./js/jquery.min.js"></script>
+    <!--引入当前页js-->
+    <script src="./js/08-confirm.js"></script>
+    <!--引入蒙层js-->
+    <script src="./js/remodal.js"></script>
+
+</head>
+
+<body>
+<!--header-->
+<header>
+    <div id="topBar" class="container-fluid">
+        <div class="container login clearfix">
+            <div id="logo" class="fl">
+                <a href="./01-index.html"><img class="pic" src="./images/ordercenter.jpg" alt=""></a>
+            </div>
+            <span class="web fl">legochina.cn</span>
+            <p class="fr">欢迎光临<span class="colorf60">乐购</span>，请 <a href="./04-login.html">登录</a>\<a href="./05-register.html ">注册</a></p>
+        </div>
+    </div>
+
+    <!--searchBox-->
+    <div class="container">
+        <div id="searchBox" class="clearfix">
+            <form action="#" method="get" class="fr">
+                <input type="text" class="searchContent1 fl" placeholder="设计中的设计 原研哉">
+                <input type="submit" class="searchButton1 fl" value="">
+            </form>
+        </div>
+    </div>
+
+
+    <div id="border_btm" class="container-fluid"></div>
+</header>
+
+<!--orderInfo-->
+<section id="orderInfo" class="container mt30">
+    <div class="line1 fs18 color666">填写并核对订单信息</div>
+    <div class="line2 bgcolorf2 clearfix">
+        <span class="fl fs16 color4d">收货人信息</span><a href="#" class="fr fs16">新增收货地址</a>
+    </div>
+    <div class="address">
+        <div class="adr_default fs16 color4d">
+            <span class="part1">运送&nbsp;&nbsp;四川</span>
+            <span class="part2 mr80">成都市&nbsp;&nbsp;&nbsp;高新区&nbsp;&nbsp;&nbsp;天府新谷11号楼1101      </span>
+            <span class="part3 mr80">收货人&nbsp;&nbsp;&nbsp;X某某</span>
+            <span class="part4 mr80">联系电话：136******88</span>
+            <span class="part5 colorfff">默认收货地址</span>
+        </div>
+        <div class="adr_more fs16 color4d">
+            <p class="more">更多收货地址：</p>
+            <p>
+                <span class="part1">运送&nbsp;&nbsp;四川</span>
+                <span class="part2 mr80">成都市&nbsp;&nbsp;&nbsp;高新区&nbsp;&nbsp;&nbsp;天府新谷11号楼1101      </span>
+                <span class="part3 mr80">收货人&nbsp;&nbsp;&nbsp;X某某</span>
+                <span class="part4 mr80">联系电话：136******88</span>
+                <a class="part5 colorf60">+</a>
+            </p>
+        </div>
+    </div>
+    <div class="payWay color4d fs16 bgcolorf2">支付方式</div>
+    <div class="ways color4d fs16">
+        <span class="on">货到付款</span>
+        <span>微信支付</span>
+        <span>信用卡</span>
+        <span>银行卡</span>
+        <a href="#" class="ml10">更多>></a>
+    </div>
+    <div class="delivery bgcolorf2 fs16 color4d">
+        <span class="fl">送货清单</span>
+        <a class="fr" href="#">返回购物车修改</a>
+        <a class="fr co" href="#">价格说明</a>
+    </div>
+    <div class="deliveryInfo clearfix">
+        <div class="deliveryInfoLeft fl fs16 color4d">
+            <p class="part1">配送方式：</p>
+            <p class="part2"><span>顺丰快递</span></p>
+            <p class="part3 clearfix">
+                <span class="color999">付款方式：</span><span>现金</span><a href="#" class="fr">修改</a>
+            </p>
+            <p class="part4 clearfix">
+                <span class="color999">配送时间：</span><span>预计8月30日12：00-16：00送达</span>
+                <a href="#" class="fr">修改</a>
+            </p>
+        </div>
+        <div class="deliveryInfoRight bgcolorf2 fr fs16">
+            <div class="imgBox bgcolorfff fl">
+                <img src="./images/index08_05.jpg" alt="">
+            </div>
+            <p class="productName color4d fl">
+                <span>从你的全世界路过</span><span class="colorf60">41.00</span><span>1</span><span>有货</span>
+            </p>
+        </div>
+    </div>
+    <div class="invoice fs16 color4d">
+        <p>发票信息</p>
+        <p>
+            <span class="color999 mr20">普通发票(电子)&nbsp;&nbsp;&nbsp;个人&nbsp;&nbsp;明细</span><a href="#">修改</a>
+        </p>
+    </div>
+    <div class="sum clearfix fs18 color80">
+        <span class="fl mr80"><span class="colorf60 mr10">1</span>件商品</span>
+        <span class="fl mr80">总商品金额：<span class="colorf60">41.00</span></span>
+        <span class="fl">运费：<span class="colorf60">6.00</span></span>
+        <span class="fr color4d">应付总额：<span class="colorf60">47.00</span></span>
+    </div>
+    <div class="subOrder clearfix color4d fs14">
+        <span class="fl mr10">配送至</span>
+        <span class="adr fl">成都高新区三环内天府新谷11号1101</span>
+        <span class="fr">
+            <a href="#modal" >
+                <input type="button" id="goPay" value="去支付">
+            </a>
+        </span>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer id="footer">
+    <div class="footerBd container-fluid">
+    </div>
+    <div class="adbanner container">
+        <img class="adPic" src="./images/adbanner.png" alt="">
+    </div>
+    <!--公司服务-->
+    <div class="serviceImg container-fluid areaCenter">
+        <img src="./images/222_11.png" alt="">
+        <img src="./images/222_13.png" alt="">
+        <img src="./images/222_15.png" alt="">
+        <img src="./images/222_17.png" alt="">
+    </div>
+    <div class="serviceList container">
+        <div class="listBox areaCenter clearfix">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+        </div>
+        <a href="#"><img src="./images/logo_00.png" alt=""></a>
+    </div>
+    <!--版权信息-->
+    <div class="container copyright areaCenter">
+        <p>
+            <a href="#">公司简介</a>|
+            <a href="#">Investor Relations</a>|
+            <a href="#">网站联盟</a>|
+            <a href="#">乐购招商</a>|
+            <a href="#">机构销售</a>|
+            <a href="#">手机乐购</a>|
+            <a href="#">官方Blog</a>|
+            <a href="#">热词搜索</a>
+        </p>
+        <p class="mt20 mb100">
+            Copyright (C) 乐购网 2004-2016, All Rights Reserved
+        </p>
+    </div>
+</footer>
+
+<!--蒙层的弹出样式-->
+<div class="remodal-wrapper remodal-is-closed" style="display: none;">
+    <div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="modal" role="dialog"
+         aria-labelledby="modal1Title" aria-describedby="modal1Desc" tabindex="-1">
+        <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+        <div>
+            <h2 id="modal1Title">确认支付</h2>
+            <p id="modal1Desc">
+                <img src="./images/gantan.jpg" alt="">
+                <span class="fs20">是否立即支付？</span>
+            </p>
+        </div>
+        <br>
+        <button data-remodal-action="cancel" class="remodal-cancel">取消</button>
+        <button data-remodal-action="confirm" class="remodal-confirm">确认</button>
+    </div>
+</div>
+
+
+</body>
+
+</html>

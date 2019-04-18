@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐购后台管理系统</title>
+    <link rel="stylesheet" href="./jquery-easyui-1.7.0/themes/default/easyui.css">
+    <link rel="stylesheet" href="./jquery-easyui-1.7.0/themes/icon.css">
+    <script src="./jquery-easyui-1.7.0/jquery.min.js"></script>
+    <script src="./jquery-easyui-1.7.0/jquery.easyui.min.js"></script>
+    <style>
+        *{
+            padding: 0;margin:0;
+        }
+        .north{
+            color:#fff;text-indent: 30px;
+            height:80px;
+            line-height: 79px;
+            background-color: #031651;;
+        }
+        #ff{
+            margin-top: 30px;
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body class="easyui-layout" style="width:100%;height:100%;">
+
+    <div class="north" data-options="region:'north'">
+        <h1>乐购后台管理系统V1.0</h1>
+    </div>
+    <div data-options="region:'south',split:true" style="height:50px;"></div>
+    <div data-options="region:'east',split:true" title="East" style="width:200px;"></div>
+    <div data-options="region:'west',split:true,iconCls:'icon-large-chart'" title="功能菜单" style="width:200px;">
+        <div class="easyui-accordion" style="width:100%;height:100%;">
+            <div title="系统设置" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+                <h3 style="color:#0099FF;">系统设置区域</h3>
+            </div>
+            <div title="用户管理" data-options="iconCls:'icon-man'" style="padding:10px;">
+                <h3 style="color:#0099FF;">用户管理区域</h3>
+            </div>
+            <div title="商品管理" data-options="iconCls:'icon-edit'" style="padding:10px;">
+                <ul class="easyui-tree">
+                    <li>
+                        <span>Foods</span>
+                        <ul>
+                            <li>
+                                <span>Fruits</span>
+                                <ul>
+                                    <li>apple</li>
+                                    <li>orange</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Vegetables</span>
+                                <ul>
+                                    <li>tomato</li>
+                                    <li>carrot</li>
+                                    <li>cabbage</li>
+                                    <li>potato</li>
+                                    <li>lettuce</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-options="region:'center',title:'站内公告',iconCls:'icon-tip'">
+        <div class="easyui-tabs" style="width:100%;height: 100%;">
+            <div title="用户添加" style="padding:10px">
+                <form id="ff" class="easyui-form" method="post" data-options="novalidate:true">
+                    <div style="margin-bottom:20px">
+                        <input class="easyui-textbox" name="name" style="width:100%" data-options="label:'Name:',required:true">
+                    </div>
+                    <div style="margin-bottom:20px">
+                        <input class="easyui-textbox" name="email" style="width:100%" data-options="label:'Email:',required:true,validType:'email'">
+                    </div>
+                    <div style="margin-bottom:20px">
+                        <input class="easyui-textbox" name="subject" style="width:100%" data-options="label:'Subject:',required:true">
+                    </div>
+                    <div style="margin-bottom:20px">
+                        <input class="easyui-textbox" name="message" style="width:100%;height:60px" data-options="label:'Message:',multiline:true">
+                    </div>
+                    <div style="margin-bottom:20px">
+                        <select class="easyui-combobox" name="language" label="Language" style="width:100%"><option value="ar">Arabic</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="zh-cht">Chinese Traditional</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="en" selected="selected">English</option><option value="et">Estonian</option><option value="fi">Finnish</option><option value="fr">French</option><option value="de">German</option><option value="el">Greek</option><option value="ht">Haitian Creole</option><option value="he">Hebrew</option><option value="hi">Hindi</option><option value="mww">Hmong Daw</option><option value="hu">Hungarian</option><option value="id">Indonesian</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="no">Norwegian</option><option value="fa">Persian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="es">Spanish</option><option value="sv">Swedish</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="vi">Vietnamese</option></select>
+                    </div>
+                </form>
+                <div style="text-align:center;padding:5px 0">
+                    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()" style="width:80px">Submit</a>
+                    <a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()" style="width:80px">Clear</a>
+                </div>
+
+            </div>
+            <div title="商品管理" style="padding:10px">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

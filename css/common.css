@@ -1,0 +1,465 @@
+@charset "UTF-8";
+
+.container{
+    width:1200px;
+    margin:0 auto;
+}
+.container-fluid{
+    width:100%;
+    min-width: 1200px;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float:right;
+}
+.clear{
+    clear:both;
+}
+
+.clearfix:after{
+    content: ""; height:0; line-height: 0;
+    visibility: hidden; display: block; clear:both;
+}
+.dis_none{
+    display: none;
+}
+.dis_inb{
+    display: inline-block;
+}
+/* color */
+.colorfff{
+    color:#fff;
+}
+.colorf60{
+    color:#f60;
+}
+.colorf42{
+    color: #f4290d;
+}
+.colorb3{
+    color: #b3b3b3;
+}
+.color4d{
+    color:#4d4d4d;
+}
+.colorc0{
+    color:#c0c0c0;
+}
+.colorf4b{
+    color: #f4b212;
+}
+.color666{
+    color:#666666;
+}
+.colorbf{
+    color:#bfbfbf;
+}
+.color333{
+    color:#333333;
+}
+.color999{
+    color:#999999;
+}
+.color80{
+    color:#808080;
+}
+
+
+/* bgColor */
+.bgcolor000{
+    background-color:#000;
+}
+.bgcolorf9{
+    background-color: #f9f9f9;
+}
+.bgcolorf2{
+    background-color: #f2f2f2;
+}
+.bgcolorccc{
+    background-color: #ccc;
+}
+.bgcolorf60{
+    background-color: #f60;
+}
+.bgcolorfff{
+    background-color: #fff;
+}
+.bgcolore93{
+    background-color: #e93854;
+}
+
+/* fontSize*/
+.fs10{
+    font-size: 10px;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs16{
+    font-size: 16px;
+}
+.fs18{
+    font-size: 18px;
+}
+.fs20{
+    font-size: 20px;
+}
+.fs24{
+    font-size: 24px;
+}
+
+/* margin */
+.mt20{
+    margin-top:20px
+}
+.mt10{
+    margin-top:10px
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt50{
+    margin-top:50px
+}
+.ml10{
+    margin-left:10px
+}
+.ml20{
+    margin-left:20px
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.mb10{
+    margin-bottom: 10px;
+}
+.mb100{
+    margin-bottom: 100px;
+}
+.mr20{
+    margin-right: 20px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mr80{
+    margin-right: 80px;
+}
+.pt10{
+    padding-top: 10px;
+}
+
+/* border */
+.bd_bottom6{
+    border-bottom: 6px solid #f60;
+}
+.bd2{
+    border:2px solid #ccc;
+}
+
+
+/* position */
+.areaCenter{
+    text-align: center;
+}
+.areaRight{
+    text-align: right;
+}
+.areaLeft{
+    text-align: left;
+}
+.textTr{
+    text-decoration: line-through;
+}
+
+
+
+/*模板*/
+.title .tabMenu li{
+    float: left;
+    text-align: center;
+}
+.title .tabMenu .on{
+    background-color: #f60;
+}
+.title .tabMenu .on a{
+    color:#fff;
+}
+.leftCon{
+    width:238px;
+    height:440px;
+}
+.leftCon>img{
+    width:238px;
+    height:348px;
+}
+.leftCon .subject{
+    padding:5px 0 0 20px;
+}
+.leftCon .subject li{
+    float: left;
+    width:72px;
+    height:36px;
+    line-height: 36px;
+}
+
+.slideAD .slidebox{
+    width:429px;
+    height: 338px;
+    border:2px solid #ccc;
+    border-top: none;
+    box-sizing: border-box;
+}
+.slideAD .ad{
+    width:429px;
+    height: 160px;
+    border:2px solid #ccc;
+    border-top: none;
+    box-sizing: border-box;
+}
+.slideAD .ad img{
+    width:427px;
+    height:158px;
+}
+.rightCon {
+    width: 533px;
+
+}
+.rightCon .goods1{
+    float: left;
+    width:177px;
+    height:338px;
+    box-sizing: border-box;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.rightCon .goods1>img{
+    width:175px;
+    height:336px;
+}
+.rightCon .goods2{
+    float: left;
+    width:177px;
+    height:160px;
+    box-sizing: border-box;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+.rightCon .goods2>img{
+    width:175px;
+    height:158px;
+}
+.brandLogo ul li{
+    float: left;
+}
+
+
+
+/*header*/
+#topBar{
+    background: #000;
+    height:28px;
+}
+#topBar .login{
+    color:#fff;
+    line-height: 28px;
+}
+#topBar .login a{
+    color:#fff;
+}
+#topBar .login a:hover{
+    color:#f60;
+}
+#topBar .website{
+    text-indent: 210px;
+}
+#topBar .web{
+    text-indent: 270px;
+}
+#logo{
+    position: relative;
+    height:56px;
+}
+#logo .pic{
+    position: absolute;
+    top:0;left:0;
+}
+#wel .welcome{
+    font-size: 26px;
+    line-height: 32px;color:#666666;
+    margin:20px 0 25px 282px;
+}
+
+
+/*searchBox*/
+#searchBox{
+    margin-top:4px;
+}
+#searchBox a{
+    width:100px;
+    height:36px;
+    line-height:36px;
+    background-color:#ebebeb;
+    color:#909090;
+    text-align: center;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+#searchBox .shopCar{
+    background: #f60 url("../images/bgicon.png") no-repeat 0 -42px;
+    color:#fff;
+    text-indent:28px;
+}
+
+#searchBox .searchContent{
+    width:390px;
+    height:36px;
+    text-indent: 10px;
+    border:2px solid #f60;
+}
+#searchBox .searchButton{
+    width:50px;
+    height:40px;
+    background: #f60 url("../images/bgicon.png") no-repeat -3px 4px;
+    margin-right:100px;
+}
+#searchBox .searchContent1{
+    width:390px;height:36px;box-sizing: border-box;
+    border:2px solid #f60;
+    text-indent: 10px;
+}
+#searchBox .searchButton1{
+    width:48px;height:36px;box-sizing: border-box;
+    border:2px solid #f60;
+    background: url("../images/bgicon.png") -4px 0;
+}
+/* nav */
+#nav{
+    margin-top:24px;
+}
+#nav .logo{
+    position: relative;
+    height: 17px;
+}
+#nav .logo img{
+    position: absolute;
+    left:0;
+    bottom: 0;
+}
+#nav .navList{
+    margin-right: 110px;
+}
+#nav .navList li{
+    float: left;
+    margin-left: 30px;
+}
+#nav .navList li a{
+    font-size: 16px;
+    font-weight: bold;
+    line-height:5px;
+}
+
+/*footer*/
+#footer .footerBd{
+    height:6px;
+    background-color: #ff6600;
+}
+#footer .footerBd .goTop{
+    position: relative;
+}
+#footer .footerBd .goTop img{
+    position: absolute;
+    right: 0;
+    top:-50px;
+}
+#footer .serviceImg{
+    height:100px;
+    background-color: #f2f2f2;
+}
+#footer .serviceImg img{
+    margin:30px 45px 18px 45px;
+}
+#footer .serviceList .listBox{
+    margin:0 auto;
+    height:200px;
+    padding-left: 200px;
+}
+#footer .serviceList{
+    position: relative;
+}
+#footer .serviceList img{
+    position: absolute;
+    right:10px;
+    top:50px;
+}
+#footer .serviceList .listBox dl{
+    float: left;
+    width:100px;
+    height:130px;
+    margin:30px 33px;
+    text-align: center;
+}
+#footer .serviceList .listBox dl dt{
+    font-size: 16px;
+    line-height: 25px;
+}
+#footer .serviceList .listBox dl dd{
+    font-size: 14px;
+    line-height: 25px;
+}
+#footer .copyright p a{
+    margin:20px 18px;
+}
+/* adbanner */
+#footer .adbanner{
+    position: relative;
+}
+#footer .adbanner .adPic{
+    position: absolute;
+    top:-96px;
+}
+
+
+/* 产品列表页图片框 */
+.sales li{
+    float: left;
+}
+.sales li:hover{
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 5px #888888;
+}
+.sales .book{
+    width:110px;
+    height:150px;
+}
+/* 热销书籍排行榜 */
+.rankList{
+    width:280px;
+    height: 490px;
+    margin-top:-8px;
+    box-sizing: border-box;
+    padding: 20px 0 10px 30px;
+}
+.rankList li{
+    border-bottom: 2px solid #ccc;
+    line-height: 35px;
+    position: relative;
+}
+.rankList li:last-child{
+    border:none;
+}
+.rankList li span{
+    position: absolute;
+    left:-18px;
+}
+.rankList li .bookCon p{
+    width:120px;
+    line-height: 20px;
+
+}
+

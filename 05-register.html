@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <!--引入重置样式-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--引入公用样式-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--引入注册插件-->
+    <link rel="stylesheet" href="css/zhuce.css">
+    <!---->
+    <link rel="stylesheet" href="css/05-register.css">
+
+    <!--引入jQuery-->
+    <script src="./js/jquery.min.js"></script>
+    <!--引入注册插件-->
+    <script src="./js/zhuce.js"></script>
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div id="topBar" class="container-fluid">
+            <div class="container login clearfix">
+                <div id="logo" class="fl">
+                    <a href="./01-index.html"><img class="pic" src="./images/logo.jpg" alt=""></a>
+                </div>
+                <span class="web fl">legochina.cn</span>
+                <p class="fr">欢迎光临<span class="colorf60">乐购</span>，请 <a href="./04-login.html">登录</a>\<a href="./05-register.html">注册</a></p>
+            </div>
+            <div id="wlc" class="container">
+                <span class="fl fs24 color666">欢迎登陆</span>
+                <span class="fr fs16 colorbf">已有账号，请 <span><a class="color666" href="./04-login.html">登录</a></span> </span>
+            </div>
+        </div>
+        <div id="border_btm" class="container-fluid"></div>
+    </header>
+
+    <!--register-->
+    <section id="register">
+        <!--引入插件代码-->
+        <form action="">
+            <div class="register-box">
+                <label for="username" class="username_label">用 户 名
+                    <input maxlength="20" type="text" placeholder="您的用户名和登录名">
+                </label>
+                <div class="tips">
+
+                </div>
+            </div>
+            <div class="register-box">
+                <label for="username" class="other_label">设 置 密 码
+                    <input maxlength="20" type="password" placeholder="建议至少使用两种字符组合">
+                </label>
+                <div class="tips">
+
+                </div>
+            </div>
+            <div class="register-box">
+                <label for="username" class="other_label">确 认 密 码
+                    <input maxlength="20" type="password" placeholder="请再次输入密码">
+                </label>
+                <div class="tips">
+
+                </div>
+            </div>
+            <div class="register-box">
+                <label for="username" class="other_label">
+                    <span>中国 +86 </span>
+                    <input class="phone" maxlength="20" type="text" placeholder="建议使用常用手机">
+                </label>
+                <div class="tips">
+
+                </div>
+            </div>
+            <div class="register-box">
+                <label for="username" class="other_label">验 证 码
+                    <input maxlength="20" type="text" placeholder="请输入验证码">
+                </label>
+                <span id="code"></span>
+                <div class="tips">
+
+                </div>
+            </div>
+            <div class="arguement">
+                <input type="checkbox" id="xieyi">
+                阅读并同意
+                <a href="#">《乐购用户注册协议》</a>
+                <a href="#">《隐私政策》</a>
+                <div class="tips">
+
+                </div>
+            </div>
+            <div class="submit_btn">
+                <button type="submit" id="submit_btn">立 即 注 册</button>
+            </div>
+        </form>
+    </section>
+
+    <!--footer-->
+    <footer id="footer" class="mt50">
+        </div>
+        
+        <!--版权信息-->
+        <div class="container copyright areaCenter">
+            <p>
+                <a href="#">公司简介</a>|
+                <a href="#">Investor Relations</a>|
+                <a href="#">网站联盟</a>|
+                <a href="#">乐购招商</a>|
+                <a href="#">机构销售</a>|
+                <a href="#">手机乐购</a>|
+                <a href="#">官方Blog</a>|
+                <a href="#">热词搜索</a>
+            </p>
+            <p class="mt20 mb100">
+                Copyright (C) 乐购网 2004-2016, All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        $("#xieyi").change(function () {
+            let bool = $("#xieyi").prop("checked");
+            if(bool){
+                $("#submit_btn").css({"background":"#f60"});
+            }else{
+                $("#submit_btn").css({"background":"#ccc"});
+            }
+        })
+
+    </script>
+</body>
+
+</html>

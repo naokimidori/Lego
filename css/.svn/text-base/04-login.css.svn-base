@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+#login .banner{
+    background: url("../images/search.jpg") no-repeat;
+    height:500px;
+ }
+#login .banner .loginBox{
+    width:350px;height:370px;border:1px solid #ccc;
+    background-color: #fff;
+    margin-right: 90px;
+    margin-top:65px;
+}
+#login .banner .loginBox>p{
+    height:56px;
+    border-bottom: 1px solid #ccc;
+}
+#login .banner .loginBox>p>span{
+    display: inline-block;
+    width:173px;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#login .banner .loginBox>p>span.on{
+    color:#ff6600;
+}
+
+#login .banner .loginBox .code{
+    border-right: 1px solid #ccc;
+}
+
+/*切换*/
+#login .banner .loginBox .change{
+    display: none;
+}
+#login .banner .loginBox .change.active{
+    display: block;
+}
+
+#login .banner .loginBox .codeBox{
+    padding-left:25px;
+    position: relative;
+}
+#login .banner .loginBox .codeBox .logindiv{
+    height:200px;
+}
+#login #loginCode{
+    position: absolute;
+    left:100px;
+    /* 35 */
+    top:50px;
+}
+#login #loginPhone{
+    position: absolute;
+    top:50px;
+    right:30px;
+    height:147px;
+    display: none;
+}
+
+#login .banner .loginBox form{
+    height: 262px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    padding-left:30px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+}
+
+#login .countBox .user{
+    width:288px;height:38px;
+    background: url("../images/user.jpg") no-repeat;
+    text-indent: 50px;
+    font-size: 14px;
+    margin-bottom: 18px;
+    border:1px solid #ccc;
+}
+#login .countBox .pwd{
+    width:288px;height:38px;
+    background: url("../images/pwd.jpg") no-repeat;
+    text-indent: 50px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    margin-right:20px;
+    border:1px solid #ccc;
+}
+#login .countBox .forget{
+    margin-left: 166px;
+}
+#login .countBox .dl{
+    width:288px;height:38px;
+    font-size: 18px;
+    color:#fff;
+    margin-top:28px;
+    cursor: pointer;
+    background-color: #ff6600;
+}

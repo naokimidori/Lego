@@ -1,0 +1,1004 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <!--引入重置样式-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--引入公用样式-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--引入产品列表css-->
+    <link rel="stylesheet" href="./css/02-productList.css">
+    <!-- 引入轮播图样式 -->
+    <link rel="stylesheet" href="./css/slide.css">
+
+    <!--引入jQuery-->
+    <script src="./js/jquery.min.js"></script>
+    <!-- 引入当前js -->
+    <script src="./js/02-productList.js"></script>
+    <!-- 引入轮播插件 -->
+    <script src="./js/slide.js"></script>
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div id="topBar" class="container-fluid">
+            <div class="container login clearfix">
+                <span class="website fl">legochina.cn</span>
+                <p class="fr">欢迎光临<span class="colorf60">乐购</span>，请 <a href="./04-login.html">登录</a>\<a href="./05-register.html">注册</a></p>
+            </div>
+        </div>
+
+        <!--searchBox-->
+        <div class="container">
+            <div id="searchBox" class="clearfix">
+                <a href="./08-confirm.html" class="myOrder fr">我的订单</a>
+                <a href="./06-shopCar.html" class="shopCar fr">购物车 <span>3</span></a>
+                <form action="#" method="get" class="fr">
+                    <input type="text" class="searchContent fl" placeholder="创意文具">
+                    <input type="submit" class="searchButton fl" value="">
+                </form>
+            </div>
+        </div>
+
+        <!--nav-->
+        <div class="container">
+            <nav id="nav" class="clearfix">
+                <h1 class="logo fl">
+                    <a href="./01-index.html"><img src="./images/LOGO_02.jpg" alt=""></a>
+                </h1>
+                <ul class="navList fr">
+                    <li><a href="#">图书</a></li>
+                    <li><a href="#">电子书</a></li>
+                    <li><a href="#">原创文学</a></li>
+                    <li><a href="#">服装</a></li>
+                    <li><a href="#">运动户外</a></li>
+                    <li><a href="#">孕婴童</a></li>
+                    <li><a href="#">家居</a></li>
+                    <li><a href="#">创意文具</a></li>
+                    <li><a href="#">地方特产</a></li>
+                    <li><a href="#">海外购</a></li>
+                    <li><a href="#">电器城</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--bannner-->
+    <section id="banner" class="container clearfix">
+        <div class="bannerSlide fl">
+            <!-- 引入HTML代码 -->
+            <!--轮播图插件代码-->
+            <div class="pptbox" id="boxAnimate">
+                <ul class="innerwrapper">
+                    <li><a href="#"><img src="./images/banner1.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/banner2.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/banner3.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/banner4.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/banner5.jpg" /></a></li>
+                    <li><a href="#"><img src="./images/banner6.jpg" /></a></li>
+                </ul>
+                <ul class="controls">
+                    <li class="current">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <span class="btnleft"></span>
+                <span class="btnright"></span>
+            </div>
+        </div>
+
+        <div class="rank fl">
+            <div class="rankTitle colorfff fs16">热卖畅销</div>
+            <ul class="bannerrank">
+                <li>
+                    <div class="book_name clearfix dis_none">
+                        <span class="fl colorfff bgcolorf60">1</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <h3 class="fl">《从你的全世</h3>
+                    </div>
+                    <div class="book_con clearfix">
+                        <span class="fl colorfff bgcolorf60">1</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p class="fr">《三体》刘慈欣一场科幻的史诗风暴</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_name clearfix">
+                        <span class="fl colorfff bgcolorf60">2</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <h3 class="fl">《从你的全世</h3>
+                    </div>
+                    <div class="book_con clearfix dis_none">
+                        <span class="fl colorfff bgcolorf60">2</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p class="fr">《三体》刘慈欣一场科幻的史诗风暴</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_name clearfix">
+                        <span class="fl colorfff bgcolorf60">3</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <h3 class="fl">《从你的全世</h3>
+                    </div>
+                    <div class="book_con clearfix dis_none">
+                        <span class="fl colorfff bgcolorf60">3</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p class="fr">《三体》刘慈欣一场科幻的史诗风暴</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_name clearfix">
+                        <span class="fl colorfff bgcolorccc">4</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <h3 class="fl">《从你的全世</h3>
+                    </div>
+                    <div class="book_con clearfix dis_none">
+                        <span class="fl colorfff bgcolorccc">4</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p class="fr">《三体》刘慈欣一场科幻的史诗风暴</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_name clearfix">
+                        <span class="fl colorfff bgcolorccc">5</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <h3 class="fl">《从你的全世</h3>
+                    </div>
+                    <div class="book_con clearfix dis_none">
+                        <span class="fl colorfff bgcolorccc">5</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p class="fr">《三体》刘慈欣一场科幻的史诗风暴</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_name clearfix">
+                        <span class="fl colorfff bgcolorccc">6</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <h3 class="fl">《从你的全世</h3>
+                    </div>
+                    <div class="book_con clearfix dis_none">
+                        <span class="fl colorfff bgcolorccc">6</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p class="fr">《三体》刘慈欣一场科幻的史诗风暴</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="book_name clearfix">
+                        <span class="fl colorfff bgcolorccc">7</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <h3 class="fl">《从你的全世</h3>
+                    </div>
+                    <div class="book_con clearfix dis_none">
+                        <span class="fl colorfff bgcolorccc">7</span>
+                        <img class="fl" src="./images/index08_05.jpg" alt="">
+                        <p class="fr">《三体》刘慈欣一场科幻的史诗风暴</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="adBox">
+            <img src="./images/adbanner.png" alt="">
+        </div>
+    </section>
+
+    <!--rebate-->
+    <section id="rebate" class="container mt20 ">
+        <div class="title bd_bottom6 clearfix">
+            <p class="fl fs20 colorfff bgcolorf60">乐购.图书折扣区</p>
+        </div>
+
+        <div class="rebateList">
+            <ul class="sales clearfix">
+                <li>
+                    <a href="./03-productInfo.html"><img class="book" src="./images/baiyexing.png" alt=""></a>
+                    <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：58</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/baiyexing.png" alt="">
+                    <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：58</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/baiyexing.png" alt="">
+                    <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：58</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/baiyexing.png" alt="">
+                    <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：58</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/baiyexing.png" alt="">
+                    <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：58</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/book2.png" alt="">
+                    <p><img class="dz" src="./images/liuzhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：30 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：46</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/book2.png" alt="">
+                    <p><img class="dz" src="./images/liuzhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：30 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：46</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/book2.png" alt="">
+                    <p><img class="dz" src="./images/liuzhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：30 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：46</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/book2.png" alt="">
+                    <p><img class="dz" src="./images/liuzhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：30 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：46</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/book2.png" alt="">
+                    <p><img class="dz" src="./images/liuzhe.png" alt=""></p>
+                    <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                    <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                    <p class="ml10 fs16"><span class="colorf42">￥：30 &nbsp;&nbsp; </span>
+                        <del class="colorc0">￥：46</del>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--newBook-->
+    <section id="newBook" class="container clearfix mt20">
+        <div class="newBookLeft fl">
+            <div class="title bd_bottom6 clearfix">
+                <p class="fl fs18"><span class="bgcolorf60 colorfff fs20">新</span>书上架</p>
+            </div>
+            <div class="newBookList mt20">
+                <ul class="sales clearfix">
+                    <li>
+                        <img class="book" src="./images/bigdata.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/bigdata.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/bigdata.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/bigdata.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/bigdata.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/jinrong.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/jinrong.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/jinrong.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/jinrong.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="book" src="./images/jinrong.png" alt="">
+                        <p class="fs14 ml20 mt10">查理 史密斯</p>
+                        <p class="colorb3 ml20">中国邮电出版社</p>
+                        <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                            <del class="colorc0">￥:79</del>
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="newBookRight fr">
+            <div class="rankList fr bd2">
+                <h3 class="areaCenter fs18 colorb3 mb10">主编推荐</h3>
+                <ul>
+                    <li>
+                        <div class="bookName fs14 dis_none"><span class="colorf42">1</span>从你的全世界路过</div>
+                        <div class="bookCon clearfix mb10">
+                            <span class="colorf42 fl">1</span>
+                            <img class="fl" src="./images/index08_05.jpg" alt="">
+                            <p class="fl mt10">
+                                从你的世界路过 入选央视“2014中国好书”的80后作品！十年华语畅销小说，王家卫陈国富倾力推荐，1500万次转发，超4亿次阅读
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookName fs14"><span class="colorf42">2</span>从你的全世界路过</div>
+                        <div class="bookCon clearfix mb10 dis_none">
+                            <span class="colorf42 fl">2</span>
+                            <img class="fl" src="./images/index08_05.jpg" alt="">
+                            <p class="fl mt10">
+                                从你的世界路过 入选央视“2014中国好书”的80后作品！十年华语畅销小说，王家卫陈国富倾力推荐，1500万次转发，超4亿次阅读
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookName fs14"><span class="colorf42">3</span>从你的全世界路过</div>
+                        <div class="bookCon clearfix mb10 dis_none">
+                            <span class="colorf42 fl">3</span>
+                            <img class="fl" src="./images/index08_05.jpg" alt="">
+                            <p class="fl mt10">
+                                从你的世界路过 入选央视“2014中国好书”的80后作品！十年华语畅销小说，王家卫陈国富倾力推荐，1500万次转发，超4亿次阅读
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookName fs14"><span class="colorf42">4</span>从你的全世界路过</div>
+                        <div class="bookCon clearfix mb10 dis_none">
+                            <span class="colorf42 fl">4</span>
+                            <img class="fl" src="./images/index08_05.jpg" alt="">
+                            <p class="fl mt10">
+                                从你的世界路过 入选央视“2014中国好书”的80后作品！十年华语畅销小说，王家卫陈国富倾力推荐，1500万次转发，超4亿次阅读
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookName fs14"><span class="colorf42">5</span>从你的全世界路过</div>
+                        <div class="bookCon clearfix mb10 dis_none">
+                            <span class="colorf42 fl">5</span>
+                            <img class="fl" src="./images/index08_05.jpg" alt="">
+                            <p class="fl mt10">
+                                从你的世界路过 入选央视“2014中国好书”的80后作品！十年华语畅销小说，王家卫陈国富倾力推荐，1500万次转发，超4亿次阅读
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookName fs14"><span class="colorf42">6</span>从你的全世界路过</div>
+                        <div class="bookCon clearfix mb10 dis_none">
+                            <span class="colorf42 fl">6</span>
+                            <img class="fl" src="./images/index08_05.jpg" alt="">
+                            <p class="fl mt10">
+                                从你的世界路过 入选央视“2014中国好书”的80后作品！十年华语畅销小说，王家卫陈国富倾力推荐，1500万次转发，超4亿次阅读
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookName fs14"><span class="colorf42">7</span>从你的全世界路过</div>
+                        <div class="bookCon clearfix mb10 dis_none">
+                            <span class="colorf42 fl">7</span>
+                            <img class="fl" src="./images/index08_05.jpg" alt="">
+                            <p class="fl mt10">
+                                从你的世界路过 入选央视“2014中国好书”的80后作品！十年华语畅销小说，王家卫陈国富倾力推荐，1500万次转发，超4亿次阅读
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="bookName fs14"><span class="colorf42">8</span>从你的全世界路过</div>
+                        <div class="bookCon clearfix mb10 dis_none">
+                            <span class="colorf42 fl">8</span>
+                            <img class="fl" src="./images/index08_05.jpg" alt="">
+                            <p class="fl mt10">
+                                从你的世界路过 入选央视“2014中国好书”的80后作品！十年华语畅销小说，王家卫陈国富倾力推荐，1500万次转发，超4亿次阅读
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!--exclusive-->
+    <section id="exclusive" class="container mt20">
+        <div class="title bd_bottom6 clearfix">
+            <p class="fl fs18"><span class="bgcolorf60 colorfff fs20">独</span>家提供</p>
+            <ul class="tabMenu fr fs16">
+                <li class="on"><a href="#">货币金融</a></li>
+                <li><a href="#">社会文学</a></li>
+                <li><a href="#">科学技术</a></li>
+                <li><a href="#">儿童文学</a></li>
+                <li><a href="#">教学参辅</a></li>
+                <li><a href="#">生活</a></li>
+                <li><a href="#">小说</a></li>
+            </ul>
+        </div>
+        <!-- 引入轮播代码 -->
+        <div class="pptbox" id="exclusiveSlide">
+            <ul class="innerwrapper">
+                <li>
+                    <div class="bookListModel mt20">
+                        <ul class="sales clearfix">
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="bookListModel mt20">
+                        <ul class="sales clearfix">
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯22</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="bookListModel mt20">
+                        <ul class="sales clearfix">
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯33</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/aidehua.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                            <li>
+                                <img class="book" src="./images/huobi.png" alt="">
+                                <p class="fs14 ml20 mt10">查理 史密斯</p>
+                                <p class="colorb3 ml20">中国邮电出版社</p>
+                                <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                                    <del class="colorc0">￥:79</del>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <ul class="controls">
+                <li class="current">1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <span class="btnleft"></span>
+            <span class="btnright"></span>
+        </div>
+
+    </section>
+
+    <!--guess-->
+    <section id="guess" class="container mt20">
+        <div class="title bd_bottom6 clearfix">
+            <p class="fl fs18"><span class="bgcolorf60 colorfff fs20">猜</span>你喜欢</p>
+            <a href="#"><img class="fr" src="./images/huayipi.png" alt=""></a>
+        </div>
+
+        <div class="bookListModel mt20">
+            <ul class="sales clearfix">
+                <li>
+                    <img class="book" src="./images/guiju.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/guiju.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/guiju.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/guiju.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/guiju.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/guiju.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/yujian.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/yujian.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/yujian.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/yujian.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/yujian.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+                <li>
+                    <img class="book" src="./images/yujian.png" alt="">
+                    <p class="fs14 ml20 mt10">查理 史密斯</p>
+                    <p class="colorb3 ml20">中国邮电出版社</p>
+                    <p class="ml20 fs16"><span class="colorf42">￥:49 &nbsp;</span>
+                        <del class="colorc0">￥:79</del>
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+        <div class="bottomAd clearfix">
+            <a href="#"><img src="./images/renwen.jpg" alt=""></a>
+            <a href="#"><img src="./images/renwen.jpg" alt=""></a>
+            <a href="#"><img src="./images/renwen.jpg" alt=""></a>
+            <a href="#"><img src="./images/renwen.jpg" alt=""></a>
+            <a href="#"><img src="./images/renwen.jpg" alt=""></a>
+            <a href="#"><img src="./images/renwen.jpg" alt=""></a>
+            <a href="#"><img class="mt20" src="./images/adbanner.png" alt=""></a>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="footerBd container-fluid">
+
+        </div>
+        <!--公司服务-->
+        <div class="serviceImg container-fluid areaCenter">
+            <img src="./images/222_11.png" alt="">
+            <img src="./images/222_13.png" alt="">
+            <img src="./images/222_15.png" alt="">
+            <img src="./images/222_17.png" alt="">
+        </div>
+        <div class="serviceList container">
+            <div class="listBox areaCenter clearfix">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+            </div>
+            <a href="#"><img src="./images/logo_00.png" alt=""></a>
+        </div>
+        <!--版权信息-->
+        <div class="container copyright areaCenter">
+            <p>
+                <a href="#">公司简介</a>|
+                <a href="#">Investor Relations</a>|
+                <a href="#">网站联盟</a>|
+                <a href="#">乐购招商</a>|
+                <a href="#">机构销售</a>|
+                <a href="#">手机乐购</a>|
+                <a href="#">官方Blog</a>|
+                <a href="#">热词搜索</a>
+            </p>
+            <p class="mt20 mb100">
+                Copyright (C) 乐购网 2004-2016, All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

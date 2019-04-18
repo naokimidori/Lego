@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+/*领券中心*/
+#ticket{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    margin-top: -300px;
+}
+#ticket .icon1{
+    position: absolute;
+    top:200px;
+    right: 0px;
+}
+#ticket .icon2{
+    position: absolute;
+    top:160px;
+    right: 0px;
+}
+#ticket .icon3{
+    position: absolute;
+    top:300px;
+    right: 0px;
+}
+#ticket .icon4{
+    position: absolute;
+    top:200px;
+    right: -100px;
+}
+/* menu & banner*/
+#menu{
+    width:200px;
+    position: relative;
+}
+#menu .catagory p{
+    height:30px;
+    line-height:30px;
+    background-color:#f3f3f3;
+    text-indent: 20px;
+    border:1px solid #f3f3f3;
+}
+#menu .catagory p>a{
+    color:#494949;
+    text-decoration: none;
+}
+#menu .catagory p.active{
+    width: 200px;
+    border: 1px solid #f60;
+    border-right: none;
+    color: #f60;
+    background-color: #fff;
+    z-index: 1000;
+    position: relative;
+}
+#menu .catagory p.active>a{
+    color:#ff6600;
+}
+#menu .catagory .submenu{
+    position: absolute;
+    width: 580px;
+    height: 490px;
+    border: 1px solid #f60;
+    left: 200px;
+    top: 0;
+    z-index: 999;
+    display: none;
+    background-color: #fff;
+    padding:0 68px 0 36px;
+}
+
+#menu .submenu .topList{
+    height:40px;
+}
+#menu .submenu .topList li{
+    float: left;
+    height:30px;
+    line-height: 30px;
+    margin-right:36px;
+}
+#menu .submenu .title{
+    line-height: 26px;
+    border-bottom:2px solid #ccc;
+    margin-bottom: 3px;
+}
+#menu .submenu .item li{
+    float: left;
+    margin:0 14px 8px 0;
+
+}
+#menu .submenu .item li a{
+    font-size: 10px;
+}
+
+#banner{
+    width:1000px;
+    height:430px;
+}
+
+/* recommend */
+#recommend .title{
+    border-bottom: 6px solid #f60;
+}
+#recommend .picBox{
+    width:1188px;
+    margin: 0 auto;
+    border-left:2px solid #f60;
+}
+#recommend .picBox li{
+    width:196px;
+    height:250px;
+    border-right:2px solid #f60;
+    border-bottom:2px solid #f60;
+    float: left;
+}
+
+
+
+#books .title{
+    width:900px;
+}
+
+.title .tabMenu li{
+    width:98px;
+    height:34px;
+    line-height: 34px;
+    margin-right:25px;
+}
+#books .leftCon{
+    width:238px;
+}
+#books .leftCon>img{
+    width:238px;
+    height:286px;
+}
+
+#books .middleCon{
+    width:662px;
+    height: 436px;
+    border-left: 2px solid #ccc;
+    box-sizing: border-box;
+    display: none;
+}
+#books .middleCon .slide{
+    width: 330px;
+    height:218px;
+    box-sizing: border-box;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+#books .middleCon .picBox{
+    width: 165px;
+    box-sizing: border-box;
+    float: left;
+    height: 218px;
+    border-right: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    padding-top: 20px;
+}
+#books .active{
+    display: block;
+}
+/* 热销书籍排行榜 */
+#books .rankList{
+    width:280px;
+    height: 442px;
+    margin-top:-8px;
+    box-sizing: border-box;
+    padding: 20px 0 10px 30px;
+}
+#books .rankList li{
+    border-bottom: 2px solid #ccc;
+    line-height: 35px;
+    position: relative;
+}
+#books .rankList li:last-child{
+    border:none;
+}
+#books .rankList li span{
+    position: absolute;
+    left:-18px;
+}
+#books .rankList li .bookCon p{
+    width:120px;
+    line-height: 20px;
+
+}
+
+#daily .dailyCon .dailyCon_left{
+    width:488px;
+    height:500px;
+    border:2px solid #ccc;
+    border-top: none;
+    box-sizing: border-box;
+}
+#daily .dailyCon .dailyCon_left img{
+    width:484px;
+    height:498px;
+}
+#daily .dailyCon .rightCon{
+    width: 712px;
+}
+
+#popularize .title{
+    position: relative;
+}
+#popularize .title ul{
+    position: absolute;
+    right:20px;
+    top:10px;
+}
+#popularize .title ul .on{
+    border-color:#ff6600;
+}
+#popularize .title ul li{
+    border:10px solid #ccc;
+    border-radius: 100%;
+    margin-right:10px;
+    float: left;
+}
+#popularize .more_page1{
+    margin: 0 auto;
+}
+#popularize .more_page1 li{
+    width:214px;
+    height:300px;
+    padding: 30px 32px 33px 32px;
+    margin:10px 10px 13px 14px;
+    box-sizing: border-box;
+    float: left;
+}
+#popularize .more_page1 li img{
+    width:150px;
+    height:150px;
+}
+#popularize .more_page1 li p{
+    width:150px;
+    margin:4px auto;
+}
+#popularize .more_page1 li p:last-child{
+    background: url("../images/bgicon.png") no-repeat -4px -84px;
+}
+#popularize .more_page1 li:hover{
+    background-color: #f2f2f2;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+#layerScroll{
+    position: fixed;
+    left:50%;
+    top:200px;
+    margin-left: -640px;
+    display: none;
+}
+#layerScroll li{
+    height: 28px;width:0;
+    overflow: hidden;
+    background-image: url("../images/fix_box_icon.png");
+    background-color: #f2f2f2;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    padding-top: 12px;
+    cursor: pointer;
+    color:#fff;
+}
+#layerScroll .icon1{
+    background-position: 0 0;
+}
+#layerScroll .icon2{
+    background-position: 0 -80px;
+}
+#layerScroll .icon3{
+    background-position: 0 -160px;
+}
+#layerScroll .icon4{
+    background-position: 0 -200px;
+}
+#layerScroll .icon5{
+    background-position: 0 -320px;
+}
+
+#fixTop{
+    display: none;
+    position: fixed;
+    top:0;left:0;
+    height:50px;
+    width:100%;
+    background-color: rgba(0,0,0,.5);
+}
+#fixTop form{
+    position: fixed;
+    left:600px;top:5px;
+}
+.searchContent{
+    width:390px;
+    height:36px;
+    text-indent: 10px;
+    border:2px solid #f60;
+}
+.searchButton{
+    width:50px;
+    height:40px;
+    background: #f60 url("../images/bgicon.png") no-repeat -3px 4px;
+    margin-right:100px;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,168 @@
+@charset "UTF-8";
+#banner .bannerSlide {
+    width: 1000px;
+    height: 430px;
+}
+
+#banner .rank {
+    width: 200px;
+    height: 430px;
+}
+
+#banner .rank .rankTitle {
+    background-color: #93d46f;
+    padding-left: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#banner .rank .bannerrank li {
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+#banner .rank .bannerrank li img {
+    width: 100px;
+    height: 150px;
+}
+
+#banner .rank .bannerrank span {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 20px;
+}
+
+#banner .rank .bannerrank .book_name {
+    height: 40px;
+    overflow: hidden;
+}
+
+#banner .rank .bannerrank .book_name h3 {
+    font-weight: normal;
+    line-height: 55px;
+}
+
+#banner .rank .bannerrank li .book_con p {
+    width: 80px;
+    margin: 30px 10px 0 10px;
+}
+
+#rebate .title p {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+}
+
+#rebate .rebateList {
+    width: 1200px;
+}
+
+#rebate .rebateList .sales li {
+    width: 210px;
+    height: 258px;
+    line-height: 25px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+#rebate .rebateList .sales .book {
+    margin: 0 50px;
+}
+
+#newBook .newBookLeft {
+    width: 905px;
+}
+
+/* 标题样式 */
+
+.title p {
+    height: 40px;
+    line-height: 40px;
+}
+
+.title p span {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+
+.title .tabMenu li {
+    float: left;
+    width: 98px;
+    line-height: 40px;
+    margin-right: 10px;
+}
+
+#newBook .newBookList {
+    width: 905px;
+}
+
+#newBook .newBookList .sales li {
+    width: 170px;
+    height: 220px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+
+#newBook .newBookList .sales .book {
+    margin: 0 30px;
+}
+
+#newBook .newBookRight {
+    margin-top: 46px;
+}
+
+.bookListModel .sales {
+    padding-left: 36px;
+}
+
+.bookListModel .sales li {
+    width: 170px;
+    height: 220px;
+    margin-right: 22px;
+    margin-bottom: 24px;
+}
+
+.bookListModel .sales li .book {
+    margin: 0 30px;
+    width:110px !important;
+    height:150px !important;
+}
+
+.bookListModel .sales>div{
+    width: 170px;
+    height: 220px;
+    margin-right: 22px;
+    margin-bottom: 24px;
+}
+
+.bookListModel .sales>div .book {
+    margin: 0 30px;
+}
+
+#guess .title {
+    position: relative;
+}
+
+#guess .title img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+#guess .bookListModel {
+    border-bottom: 1px solid #ccc;
+}
+
+#guess .bottomAd {
+    margin-top: 30px;
+}
+
+#guess .bottomAd img {
+    float: left;
+}

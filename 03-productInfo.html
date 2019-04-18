@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品详情</title>
+    <!--引入重置样式-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--引入公用样式-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--引入当前页样式-->
+    <link rel="stylesheet" href="css/03-productInfo.css">
+    <!--插件css-->
+    <link rel="stylesheet" href="css/jquery.exzoom.css">
+
+    <!--引入jQuery-->
+    <script src="./js/jquery.min.js"></script>
+    <!--引入插件js-->
+    <script src="./js/jquery.exzoom.js"></script>
+    <!--引入js-->
+    <script src="./js/03-productInfo.js"></script>
+</head>
+<body>
+<!--header-->
+<header>
+    <div id="topBar" class="container-fluid">
+        <div class="container login clearfix">
+            <span class="website fl">legochina.cn</span>
+            <p class="fr">欢迎光临<span class="colorf60">乐购</span>，请 <a href="./04-login.html">登录</a>\<a href="./05-register.html">注册</a></p>
+        </div>
+    </div>
+
+    <!--searchBox-->
+    <div class="container">
+        <div id="searchBox" class="clearfix">
+            <a href="./08-confirm.html" class="myOrder fr">我的订单</a>
+            <a href="./06-shopCar.html" class="shopCar fr">购物车 <span>3</span></a>
+            <form action="#" method="get" class="fr">
+                <input type="text" class="searchContent fl" placeholder="创意文具">
+                <input type="submit" class="searchButton fl" value="">
+            </form>
+        </div>
+    </div>
+
+    <!--nav-->
+    <div class="container">
+        <nav id="nav" class="clearfix">
+            <h1 class="logo fl">
+                <a href="./01-index.html"><img src="./images/LOGO_02.jpg" alt=""></a>
+            </h1>
+            <ul class="navList fr">
+                <li><a href="#">图书</a></li>
+                <li><a href="#">电子书</a></li>
+                <li><a href="#">原创文学</a></li>
+                <li><a href="#">服装</a></li>
+                <li><a href="#">运动户外</a></li>
+                <li><a href="#">孕婴童</a></li>
+                <li><a href="#">家居</a></li>
+                <li><a href="#">创意文具</a></li>
+                <li><a href="#">地方特产</a></li>
+                <li><a href="#">海外购</a></li>
+                <li><a href="#">电器城</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!--productInfo 产品信息-->
+<section id="productInfo" class="container-fluid bgcolorf2">
+    <div class="information container">
+        <div class="infoTitle">
+            <a href="#">图书</a>><a href="#">小说</a>><a href="#">情感/家庭/婚姻</a>><a href="#">博集天卷</a>><a href="#">他和她</a>
+        </div>
+        <div class="infoBox bgcolorfff clearfix">
+            <div class="infoLeft fl">
+                <!--引入放大镜html-->
+                <div class="exzoom" id="exzoom">
+                    <!--大图区域-->
+                    <div class="exzoom_img_box">
+                        <ul class='exzoom_img_ul'>
+                            <li><img src="images/photos/img01.jpg"/></li>
+                            <li><img src="images/photos/img02.jpg"/></li>
+                            <li><img src="images/photos/img03.jpg"/></li>
+                            <li><img src="images/photos/img04.jpg"/></li>
+                            <li><img src="images/photos/img05.jpg"/></li>
+                            <li><img src="images/photos/img06.jpg"/></li>
+                            <li><img src="images/photos/img07.jpg"/></li>
+                            <li><img src="images/photos/img08.jpg"/></li>
+                        </ul>
+                    </div>
+                    <!--缩略图导航-->
+                    <div class="exzoom_nav"></div>
+                    <!--控制按钮-->
+                    <p class="exzoom_btn">
+                        <a href="javascript:void(0);" class="exzoom_prev_btn"> < </a>
+                        <a href="javascript:void(0);" class="exzoom_next_btn"> > </a>
+                    </p>
+                </div>
+                <p class="fs16 color4d areaCenter mt30">商品编号：11950959</p>
+            </div>
+            <div class="infoRight fl">
+                <h3 class="fs20 ml10">她和他</h3>
+                <p class="fs16 colorf42 ml10">《偷影子的人》&nbsp;作者马克&nbsp;·&nbsp;李维重磅新作，法国连续60周在榜，销量突破120万册</p>
+                <p class="fs14 color4d ml10">[法] &nbsp;马克&nbsp;·&nbsp;李维 &nbsp;著；&nbsp;杨亦雨 &nbsp;译</p>
+                <div class="pj fr">
+                    <p class="color4d fs14">累计评价</p>
+                    <p><a href="#" class="colorf60 fs14">9999+</a></p>
+                </div>
+                <div class="priceBox">
+                    <p class="fs14 color4d">乐 购 价：<span class="colorf42 fs18">￥26.20 &nbsp;</span>[6.9折]&emsp;[定价：￥38.00]&emsp;(降价通知)</p>
+                    <p class="fs14 color4d">促销信息：<span class="colorf42">满减&emsp;每满150.00元，可减50.00元现金</span> <a
+                            href="#">&emsp;&emsp;详情 >></a></p>
+                    <p class="fs14 mt10 color4d">领&emsp;券: &emsp;<img src="./images/quan100-6.jpg" alt="">&emsp;<img src="./images/quan100-6.jpg" alt=""></p>
+
+                </div>
+                <div class="type fs14 color4d">
+                    种类选择：<span>平装版</span><span class="on">精装版</span><span>豪华版</span><span>无敌版</span>
+                </div>
+                <div class="buy">
+                    <input type="text" class="buy_num fs18 color4d" value="1">
+                    <span class="plus fs18">+</span>
+                    <span class="reduce fs18">-</span>
+                    <a href="./06-shopCar.html"><span class="toCar colorfff bgcolorf60 fs24">加入购物车</span></a>
+                    <p class="fs16 color4d mt50">温馨提示：支持7天无理由退货</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--popular 人气单品-->
+<section id="popular" class="container">
+    <div class="title fs18 colorfff bd_bottom6">
+        <span class="bgcolorf60"> 人气单品</span>
+    </div>
+    <div class="popularList">
+        <ul class="sales clearfix">
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!--review 评论-->
+<section id="review" class="container clearfix mt50">
+    <!--看了又看 relook-->
+    <div id="relook" class="fl">
+        <p class="title fs20">看了又看</p>
+        <ul class="picList clearfix">
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+            <li>
+                <img class="book" src="./images/baiyexing.png" alt="">
+                <p><img class="dz" src="./images/bazhe.png" alt=""></p>
+                <p class="fs16 ml10">白夜行&nbsp;东野上吾</p>
+                <p class="colorf42 ml10 fs14">推荐：<img class="score" src="./images/sixingban.png" alt=""></p>
+                <p class="ml10 fs16"><span class="colorf42">￥：38 &nbsp;&nbsp; </span>
+                    <del class="colorc0">￥：58</del>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!--评论-->
+    <div id="comment" class="fr">
+        <div class="title bd_bottom6">
+            <span class="tab1">商品介绍</span>
+            <span class="tab2 on">评论(9999)</span>
+        </div>
+        <div class="tab introduce dis_none">
+            <img src="./images/jieshao.png" alt="">
+        </div>
+        <div class="tab proComment clearfix">
+            <div class="percent fs24 colorfff">
+                <img src="./images/haopingdu.png" alt="">
+            </div>
+            <div class="commentTitle">
+                <ul class="clearfix">
+                    <li class="on">全部评价(9999)</li>
+                    <li>好评（888）</li>
+                    <li>中评（888）</li>
+                    <li>差评（888）</li>
+                </ul>
+            </div>
+            <div class="commentList">
+                <ul>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fl star">
+                            <img src="./images/star8.gif" alt="">
+                            <p class="color4d fs14">下单后5天评论</p>
+                            <p class="fs14 color4d">2016-08-11</p>
+                        </div>
+                        <div class="words fl">
+                            <p class="fs14">书的质量不错，很新，一点放久的潮味或臭味都没有，内容也值得一看，关
+                                键是价格真给力</p>
+                        </div>
+                        <div class="user fr">
+                            <img src="./images/touxiang.jpg" alt=""><span>洲**子</span>
+                            <p class="fs14 colorf4b">金牌会员</p>
+                            <p class="fs14 mt5 color4d">来自iPhone客户端</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btm fr mt30">
+                <a href="#"><span class="on">1</span></a>
+                <a href="#"><span>2</span></a>
+                <a href="#"><span>3</span></a>
+                <a href="#"><span>4</span></a>
+                <a href="#"><span>5</span></a>
+                <a href="#"><span>6</span></a>
+                <span>...</span>
+                <a href="#"><span class="last">下一页</span></a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<!--footer-->
+<footer id="footer">
+    <div class="container">
+        <img class="adbanner" src="./images/adbanner.png" alt="">
+    </div>
+    <div class="footerBd container-fluid">
+        <!--回到顶部-->
+        <div class="container clearfix goTop"></div>
+    </div>
+    <!--公司服务-->
+    <div class="serviceImg container-fluid areaCenter">
+        <img src="./images/222_11.png" alt="">
+        <img src="./images/222_13.png" alt="">
+        <img src="./images/222_15.png" alt="">
+        <img src="./images/222_17.png" alt="">
+    </div>
+    <div class="serviceList container">
+        <div class="listBox areaCenter clearfix">
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+            <dl>
+                <dt>购物指南</dt>
+                <dd>购物流程</dd>
+                <dd>发票制度</dd>
+                <dd>账户管理</dd>
+                <dd>会员优惠</dd>
+            </dl>
+        </div>
+        <a href="#"><img src="./images/logo_00.png" alt=""></a>
+    </div>
+    <!--版权信息-->
+    <div class="container copyright areaCenter">
+        <p>
+            <a href="#">公司简介</a>|
+            <a href="#">Investor Relations</a>|
+            <a href="#">网站联盟</a>|
+            <a href="#">乐购招商</a>|
+            <a href="#">机构销售</a>|
+            <a href="#">手机乐购</a>|
+            <a href="#">官方Blog</a>|
+            <a href="#">热词搜索</a>
+        </p>
+        <p class="mt20 mb100">
+            Copyright (C) 乐购网 2004-2016, All Rights Reserved
+        </p>
+    </div>
+</footer>
+</body>
+</html>

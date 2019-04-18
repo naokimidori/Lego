@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>结算中心</title>
+    <!--引入重置样式-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--引入公用样式-->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入当前页样式 -->
+    <link rel="stylesheet" href="css/07-payment.css">
+    <!-- 引入蒙层 -->
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+
+    <!--引入jQuery-->
+    <script src="./js/jquery.min.js"></script>
+    <!--引入当前页js-->
+
+    <!--蒙层js-->
+    <script src="./js/remodal.js"></script>
+
+</head>
+
+<body>
+    <!--header-->
+    <header>
+        <div id="topBar" class="container-fluid">
+            <div class="container login clearfix">
+                <div id="logo" class="fl">
+                    <a href="./01-index.html"><img class="pic" src="./images/jiesuan.jpg" alt=""></a>
+                </div>
+                <span class="web fl">legochina.cn</span>
+                <p class="fr">欢迎光临<span class="colorf60">乐购</span>，请 <a href="./04-login.html">登录</a>\<a href="./05-register.html">注册</a></p>
+            </div>
+        </div>
+       
+    </header>
+
+    <!--payment-->
+    <section id="payment" class="container">
+        <p class="line1 clearfix">
+            <span class="fl fs18 color666">订单提交成功，请尽快付款！ 订单编号：91000234567</span>
+            <span class="fr"><a href="./08-confirm.html" class="fs16 order">订单详情</a></span>
+        </p>
+        <p class="line2 clearfix">
+            <span class="fl fs18 color666">请您在订单提交<span class="colorf60">24</span>小时内付款，否则将会取消订单</span>
+            <span class="fr fs18 color666">应付金额：<span class="num colorf60 fs20">47.00</span></span>
+        </p>
+        <p class="line3 clearfix">
+            <span class="fl pay bgcolorf60 colorfff fs20">乐购支付</span><span class="fl fs16 colorc0">以下方式由乐购支付提供</span>
+        </p>
+        <p class="line4 clearfix">
+            <span class="card fl fs16 color4d">银行卡</span>
+            <span class="recent fl fs16 color4d mr20">中国招商银行<span class="colorf60 ml20 mr20">网银</span><span class="colorbf ml20">最近使用</span></span>
+            <span class="addCard fl colorfff fs16">添加银行卡&nbsp;+</span>
+            <span class="money fr color333 fs16">支付金额：<span class="colorf60 fs16">47.00</span></span>
+        </p>
+        <p class="line5 clearfix">
+            <span class="toPay fr bgcolorf60">
+                <a href="#modal" >
+                    <input type="button" id="goPay" value="立即支付">
+                </a>
+            </span>
+        </p>
+        <p class="line6 clearfix">
+            <span class="others fl colorfff fs18">其他支付</span>
+            <span class="fl fs16 colorbf">以下方式不支持合并支付</span>
+        </p>
+        <p class="line7 bgcolorf2">
+            <a href="#">微信支付</a>|
+            <a href="#">中国移动支付</a>|
+            <a href="#">中国银联</a>|
+            <a href="#">外籍内卡</a>|
+            <a href="#">拉卡拉</a>|
+            <a href="#">预约支付卡</a>|
+            <a href="#">乐购钱包扫一扫</a>
+        </p>
+    </section>
+
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="footerBd container-fluid">
+        </div>
+        <div class="adbanner container">
+            <img class="adPic" src="./images/adbanner.png" alt="">
+        </div>
+        <!--公司服务-->
+        <div class="serviceImg container-fluid areaCenter">
+            <img src="./images/222_11.png" alt="">
+            <img src="./images/222_13.png" alt="">
+            <img src="./images/222_15.png" alt="">
+            <img src="./images/222_17.png" alt="">
+        </div>
+        <div class="serviceList container">
+            <div class="listBox areaCenter clearfix">
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+                <dl>
+                    <dt>购物指南</dt>
+                    <dd>购物流程</dd>
+                    <dd>发票制度</dd>
+                    <dd>账户管理</dd>
+                    <dd>会员优惠</dd>
+                </dl>
+            </div>
+            <a href="#"><img src="./images/logo_00.png" alt=""></a>
+        </div>
+        <!--版权信息-->
+        <div class="container copyright areaCenter">
+            <p>
+                <a href="#">公司简介</a>|
+                <a href="#">Investor Relations</a>|
+                <a href="#">网站联盟</a>|
+                <a href="#">乐购招商</a>|
+                <a href="#">机构销售</a>|
+                <a href="#">手机乐购</a>|
+                <a href="#">官方Blog</a>|
+                <a href="#">热词搜索</a>
+            </p>
+            <p class="mt20 mb100">
+                Copyright (C) 乐购网 2004-2016, All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <!--蒙层的弹出样式-->
+    <div class="remodal-wrapper remodal-is-closed" style="display: none;">
+        <div class="remodal remodal-is-initialized remodal-is-closed" data-remodal-id="modal" role="dialog"
+            aria-labelledby="modal1Title" aria-describedby="modal1Desc" tabindex="-1">
+            <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+            <div>
+                <h2 id="modal1Title">确认付款</h2>
+                <p id="modal1Desc">
+                    <img src="./images/gantan.jpg" alt="">
+                    <span class="fs20">是否付款？</span>
+                </p>
+            </div>
+            <br>
+            <button data-remodal-action="cancel" class="remodal-cancel">取消</button>
+            <button data-remodal-action="confirm" class="remodal-confirm">确认</button>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).on('confirmation', '.remodal', function () {
+        location.href="./loadding.html";
+    });
+    </script>
+    
+</body>
+
+</html>

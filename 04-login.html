@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页</title>
+    <!--引入重置样式-->
+    <link rel="stylesheet" href="css/reset.css">
+    <!--引入公用样式-->
+    <link rel="stylesheet" href="css/common.css">
+    <!--引入当前css-->
+    <link rel="stylesheet" href="css/04-login.css">
+
+    <!--引入jQuery-->
+    <script src="./js/jquery.min.js"></script>
+    <!--引入js-->
+    <script src="./js/04-login.js"></script>
+</head>
+
+<body>
+
+    <!--header-->
+    <header>
+        <div id="topBar" class="container-fluid">
+            <div class="container login clearfix">
+                <div id="logo" class="fl">
+                    <a href="./01-index.html"><img class="pic" src="./images/logo.jpg" alt=""></a>
+                </div>
+                <span class="web fl">legochina.cn</span>
+                <p class="fr">欢迎光临<span class="colorf60">乐购</span>，请 <a href="./04-login.html">登录</a>\<a href="./05-register.html">注册</a></p>
+            </div>
+        </div>
+        <div id="wel" class="container clearfix">
+            <p class="welcome">欢迎登陆</p>
+        </div>
+    </header>
+
+    <!--login-->
+    <section id="login">
+        <div class="container-fluid bgcolore93">
+            <div class="banner container clearfix">
+                <div class="loginBox fr">
+                    <p>
+                        <span class="code on">扫码登录</span>
+                        <span class="count">账户登录</span>
+                    </p>
+                    <div class="change codeBox active">
+                        <div class="logindiv">
+                            <img id="loginCode" src="./images/erweima.jpg" alt="">
+                            <img id="loginPhone" src="./images/phone.jpg" alt="">
+                        </div>
+                        <p class="areaCenter fs14 mt30">打开手机版&nbsp;乐购APP&nbsp;扫一扫</p>
+                    </div>
+                    <div class="change countBox">
+                        <form action="#" method="get">
+                            <input class="user" type="text" placeholder="用户名">
+                            <input class="pwd" type="password" placeholder="密码">
+                            <input class="auto" type="checkbox" name="" id=""><span class="fs14">自动登录</span>
+                            <span><a class="forget" href="#">忘记密码</a></span>
+                            <input class="dl" type="submit" value="登&nbsp;录">
+                        </form>
+                        <p class="areaCenter"><img src="./images/zhuce.jpg" alt=""><a class="fs14 colorf60"
+                                href="#">立即注册</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer id="footer" class="mt50">
+
+        <!--版权信息-->
+        <div class="container copyright areaCenter">
+            <p>
+                <a href="#">公司简介</a>|
+                <a href="#">Investor Relations</a>|
+                <a href="#">网站联盟</a>|
+                <a href="#">乐购招商</a>|
+                <a href="#">机构销售</a>|
+                <a href="#">手机乐购</a>|
+                <a href="#">官方Blog</a>|
+                <a href="#">热词搜索</a>
+            </p>
+            <p class="mt20 mb100">
+                Copyright (C) 乐购网 2004-2016, All Rights Reserved
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+#searchBox{
+    margin-top: 22px;
+    margin-bottom: 20px;
+}
+#orderInfo .line1{
+    line-height: 30px;
+}
+#orderInfo .line2{
+    height:60px;
+    line-height: 60px;
+    padding: 0 10px;
+}
+#orderInfo .line2 a{
+    color:#1080e9;
+}
+#orderInfo .address .adr_default{
+    height:100px;line-height: 100px;
+    box-sizing: border-box;
+    padding:0 10px;
+}
+#orderInfo .address .adr_default .part1{
+    width:125px;height:34px;line-height: 30px;
+    border:2px solid #f60;box-sizing: border-box;
+    display: inline-block;text-align: center;
+    background: url("../images/gou.jpg") no-repeat 106px 17px;
+    margin-right:40px;
+}
+#orderInfo .address .adr_default .part5{
+    width:125px;height:34px;line-height: 30px;
+    display: inline-block;text-align: center;
+    background-color: #999999;
+}
+#orderInfo .address .adr_more{
+    height:100px;
+    box-sizing: border-box;
+    padding:0 10px;
+}
+#orderInfo .address .adr_more .more{
+    margin-bottom: 20px;
+}
+#orderInfo .address .adr_more .part1{
+    width:125px;height:34px;line-height: 30px;
+    border:2px solid #ccc;box-sizing: border-box;
+    display: inline-block;text-align: center;
+    margin-right:40px;
+}
+#orderInfo .address .adr_more .part5{
+    cursor: pointer;font-size: 30px;
+}
+#orderInfo .payWay{
+    height:60px;line-height: 60px;padding-left: 10px;
+}
+#orderInfo .ways{
+    height:100px;
+    padding: 20px 0 0 10px;
+}
+#orderInfo .ways span{
+    width:125px;height:34px;line-height: 30px;
+    border:2px solid #ccc;box-sizing: border-box;
+    display: inline-block;text-align: center;
+    margin-right: 20px;cursor: pointer;
+}
+#orderInfo .ways span.on{
+    border:2px solid #f60;
+    background: url("../images/gou.jpg") no-repeat 106px 18px;
+}
+#orderInfo .delivery{
+    height:60px;line-height: 60px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+#orderInfo .delivery a{
+    color:#1080e9;
+    margin-left: 50px;
+}
+#orderInfo .deliveryInfo{
+    height:260px;
+    padding-left: 20px;
+    border-bottom: 2px solid #ccc;
+}
+#orderInfo .deliveryInfo .deliveryInfoLeft{
+    width:426px;
+    height:250px;
+    padding-top: 22px;box-sizing: border-box;
+}
+#orderInfo .deliveryInfo .deliveryInfoLeft .part1{
+    margin-bottom: 15px;
+}
+#orderInfo .deliveryInfo .deliveryInfoLeft .part2{
+    height:60px;
+}
+#orderInfo .deliveryInfo .deliveryInfoLeft .part2 span{
+    width:125px;height:34px;line-height: 30px;
+    border:2px solid #f60;box-sizing: border-box;
+    display: inline-block;text-align: center;
+    background: url("../images/gou.jpg") no-repeat 106px 18px;
+    margin-left: 25px;cursor: pointer;
+}
+#orderInfo .deliveryInfo .deliveryInfoLeft .part3{
+    margin-bottom: 20px;
+}
+#orderInfo .deliveryInfo a{
+    color:#1080e9;
+}
+#orderInfo .deliveryInfo .deliveryInfoRight{
+    width:736px;height:250px;
+    box-sizing: border-box;
+    padding: 15px 0 0 25px;
+}
+#orderInfo .deliveryInfo .deliveryInfoRight .imgBox{
+    width:110px;height:110px;
+    margin-right: 60px;
+}
+#orderInfo .deliveryInfo .deliveryInfoRight .productName{
+    margin-top: 20px;
+}
+#orderInfo .deliveryInfo .deliveryInfoRight .productName span{
+    margin-right: 80px;
+}
+#orderInfo .deliveryInfo .deliveryInfoRight .productName span:last-child{
+    font-weight: bold;
+}
+#orderInfo .invoice{
+    height:110px;box-sizing: border-box;
+    padding: 10px 0 0 20px;
+    line-height: 40px;
+}
+#orderInfo .invoice a{
+    color:#1080e9;
+}
+#orderInfo .sum{
+    height:61px;line-height: 60px;
+    border:1px solid #ccc;
+    box-sizing: border-box;
+    padding:0 35px 0 20px;
+}
+#orderInfo .subOrder{
+    height:60px;line-height: 60px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+#orderInfo .subOrder .adr{
+    border:1px solid #ccc;height:16px;line-height: 16px;
+    margin-top: 21px;width: 250px;display: inline-block;
+    text-align: center;
+}
+#orderInfo .subOrder #goPay{
+    width: 160px;height:60px;
+    background-color: #ff6600;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+#footer{
+    margin-top: 300px;
+}
+
+.remodal{
+    width:500px;
+    height:280px;
+    padding: 0;
+}
+.remodal #modal1Title{
+    text-align: left;
+    height:40px;
+    line-height: 40px;
+    color:#676767;
+    background-color: #e6e6e6;
+    font-weight: normal;
+    font-size: 20px;
+    text-indent: 20px;
+    margin-bottom: 40px;
+}
+.remodal .remodal-cancel{
+    margin-right: 20px;
+    font-size: 16px;
+}
+.remodal .remodal-confirm{
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
